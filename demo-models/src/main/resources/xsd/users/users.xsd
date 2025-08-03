@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ikh.com"
+           xmlns:tns="http://ikh.com"
+           elementFormDefault="qualified">
+
+    <!-- Inline definition for CreateUserRequest -->
+    <xs:element name="CreateUserRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="surname" type="xs:string"/>
+                <xs:element name="job" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Inline definition for UserCreatedResponse -->
+    <xs:element name="UserCreatedResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="greeting" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
